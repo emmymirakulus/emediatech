@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Hover.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
+    .form-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 50px auto;
+    }
+    .form-label {
+      font-weight: bold;
+      color: #333;
+    }
+    .form-control:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+      transition: all 0.3s ease-in-out;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .whatsapp-contact {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .whatsapp-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #25d366;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .whatsapp-contact img {
+      width: 24px;
+      height: 24px;
+    }
+    .whatsapp-contact a:hover {
+      color: #128c7e;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container animate__animated animate__fadeIn">
+    <h1 class="text-center">Contact Us</h1>
+    <form action="https://formspree.io/f/myzzzdqo" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Your Full Name" required data-bs-toggle="tooltip" title="Enter your full name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" required data-bs-toggle="tooltip" title="Enter your email address">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here" required data-bs-toggle="tooltip" title="Enter your message"></textarea>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary hvr-pulse-grow">Send Message</button>
+      </div>
+    </form>
+    <div class="whatsapp-contact">
+      <p class="mt-4">Need quick assistance? Reach us on WhatsApp:</p>
+      <a href="https://wa.me/09037760652" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+        Chat with us on WhatsApp
+      </a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    });
+  </script>
+</body>
+</html>

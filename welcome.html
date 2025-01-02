@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to E-MediaTech</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .welcome-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .enter-btn {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: #4e54c8;
+      background-color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      animation: bounce 2s infinite;
+    }
+
+    .enter-btn:hover {
+      background-color: #ddd;
+      transform: scale(1.05);
+    }
+
+    .loader {
+      display: none;
+      width: 50px;
+      height: 50px;
+      border: 5px solid #fff;
+      border-top: 5px solid #4e54c8;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    .logo {
+      width: 150px; /* Adjust the size of the logo */
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-15px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <img src="path-to-your-logo.png" alt="E-MediaTech Logo" class="logo">
+    <h1>Welcome to E-MediaTech</h1>
+    <button class="enter-btn" onclick="showLoader()">Enter to Explore More</button>
+    <div class="loader" id="loader"></div>
+  </div>
+
+  <script>
+    function showLoader() {
+      // Show the loader
+      const loader = document.getElementById('loader');
+      loader.style.display = 'block';
+
+      // Simulate navigation delay
+      setTimeout(() => {
+        // Redirect to the homepage (replace "index.html" with your homepage file)
+        window.location.href = 'index.html';
+      }, 2000); // 2 seconds delay
+    }
+  </script>
+</body>
+</html>

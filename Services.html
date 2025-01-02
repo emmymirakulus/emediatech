@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - E-MediaTech</title>
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 100px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .nav-bar {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+
+    .nav-bar li {
+      display: inline;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 10px;
+      transition: color 0.3s;
+    }
+
+    .nav-bar a:hover {
+      color: #ddd;
+    }
+
+    /* Services Section */
+    #services {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .service-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .service-item img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .service-item h3 {
+      margin: 15px 0 10px;
+    }
+
+    .service-item:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="animate__animated animate__fadeInDown">
+    <img src="path-to-your-logo.png" alt="E-MediaTech Logo" class="logo">
+    <h1>Our Services</h1>
+    <nav>
+      <ul class="nav-bar animate__animated animate__fadeInUp">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services" class="animate__animated animate__fadeIn">
+      <h2>What We Offer</h2>
+      <div class="services-grid">
+        <div class="service-item animate__animated animate__zoomIn">
+          <img src="graphic-design.jpg" alt="Graphic Design">
+          <h3>Graphic Design</h3>
+          <p>We create stunning visuals and designs to bring your ideas to life.</p>
+        </div>
+        <div class="service-item animate__animated animate__zoomIn">
+          <img src="photo-editing.jpg" alt="Photo Editing">
+          <h3>Photo Editing</h3>
+          <p>Enhance your images with our professional photo editing services.</p>
+        </div>
+        <div class="service-item animate__animated animate__zoomIn">
+          <img src="video-editing.jpg" alt="Video Editing">
+          <h3>Video Editing</h3>
+          <p>Transform your raw footage into compelling stories with our video editing expertise.</p>
+        </div>
+        <div class="service-item animate__animated animate__zoomIn">
+          <img src="animation.jpg" alt="Animation">
+          <h3>Animation</h3>
+          <p>Bring your concepts to life with creative animations that captivate your audience.</p>
+        </div>
+        <div class="service-item animate__animated animate__zoomIn">
+          <img src="website-creation.jpg" alt="Website Creation">
+          <h3>Website Creation</h3>
+          <p>Build professional and responsive websites tailored to your needs.</p>
+        </div>
+        <div class="service-item animate__animated animate__zoomIn">
+          <img src="photography.jpg" alt="Photography">
+          <h3>Photography</h3>
+          <p>Capture your moments with high-quality photography services.</p>
+        </div>
+        <div class="service-item animate__animated animate__zoomIn">
+          <img src="videography.jpg" alt="Videography">
+          <h3>Videography</h3>
+          <p>Record your events and stories with our expert videography team.</p>
+        </div>
+        <div class="service-item animate__animated animate__zoomIn">
+          <img src="everything-tech.jpg" alt="Everything Tech">
+          <h3>Everything Tech</h3>
+          <p>Your go-to partner for all things tech, from troubleshooting to innovation.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="animate__animated animate__fadeInUp">
+    <p>&copy; 2024 E-Media & Tech. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
